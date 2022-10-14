@@ -1,0 +1,124 @@
+.tickets {
+  max-width: 80rem;
+  margin: 0 auto;
+
+  &__header {
+    margin: 2.5rem 0;
+    width: 86%;
+
+    & h1 {
+      color: $color-black;
+      font-size: 2.4rem;
+    }
+  }
+
+  &__days {
+    color: $color-secondary;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 0.2rem solid $color-divider;
+  }
+
+  &__day {
+    cursor: pointer;
+  }
+
+  &__dates {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: $color-black;
+    visibility: hidden;
+    padding: 0;
+  }
+
+  &__date {
+    width: 100%;
+  }
+
+  &__summary {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5.5rem 1rem 2rem;
+    color: $color-black;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-top: 0.2rem solid $color-primary;
+  }
+}
+
+.purchase {
+  margin: 1rem auto;
+  padding: 0 2rem;
+
+  &__item {
+    padding: 1.5rem 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $color-black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-discounted {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: $color-secondary;
+    }
+  }
+
+  &__amount {
+    display: flex;
+    gap: 1rem;
+    color: $color-secondary;
+
+    & img {
+      width: 3rem;
+
+      &:active {
+        filter: invert(60%);
+      }
+    }
+  }
+}
+
+.payment {
+  margin: 2.5rem;
+  text-align: center;
+
+  &__button {
+    background-color: $color-primary;
+    border: none;
+    color: $color-white;
+    padding: 1.2rem 4.2rem;
+    text-align: center;
+    filter: $box-shadow;
+    @include transition-ease-short;
+
+    &:hover {
+      background-color: $color-black;
+    }
+
+    &:active {
+      background-color: $color-primary;
+    }
+  }
+}
+
+.active-day {
+  color: $color-black;
+  font-weight: 600;
+  border-bottom: 0.2rem solid $color-primary;
+  margin-top: -0.4rem;
+  @include transition-ease-short;
+}
+
+.active-ticket {
+  color: $color-black;
+}
+
+.visible {
+  visibility: visible;
+  @include transition-ease;
+}

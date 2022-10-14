@@ -1,0 +1,63 @@
+@mixin to-upper-case {
+  text-transform: uppercase;
+}
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin transition-ease-short {
+  transition: all 0.2s ease-in-out;
+}
+
+@mixin hamburger-icon-dimensions {
+  width: 1.8rem;
+  height: 0.2rem;
+}
+
+@mixin search-bar($search-bg, $search-border) {
+  width: 100%;
+  height: 4.5rem;
+  padding: 1rem;
+  background-color: $search-bg;
+  border: 0.2rem solid $search-border;
+  font-size: 1.8rem;
+  color: $search-border;
+  font-weight: 600;
+
+  &::placeholder {
+    color: $search-border;
+    font-weight: 600;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin link-color($base-color, $hover-color) {
+  color: $base-color;
+  @include transition-ease;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+// MEDIA QUERIES //
+//iPad mini: 768px
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+@mixin media-xl {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}

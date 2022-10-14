@@ -1,0 +1,29 @@
+.collection {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 2rem;
+
+  &__item a {
+    font-weight: 600;
+    @include to-upper-case;
+    @include link-color($color-primary, $color-black);
+  }
+
+  &__item {
+    &-img {
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+
+    & img {
+      @include transition-ease;
+
+      &:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+    }
+  }
+}

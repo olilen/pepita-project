@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="assets/icons/logo.svg" type="icon" />
+    <title>The Art Museum | Plan Your Visit</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo-box">
+        <a href="tickets.html"><img src="assets/icons/logo.svg" alt="The Art Museum logo" /></a>
+      </div>
+
+      <div class="menu-btn">
+        <span class="menu-btn__burger"></span>
+      </div>
+
+      <nav class="nav">
+        <ul class="menu-nav">
+          <li class="menu-nav__item">
+            <img class="menu-nav__icon" src="assets/icons/search.svg" alt="Calendar Icon" />
+            <input class="menu-nav__search" type="text" placeholder="Search" />
+          </li>
+
+          <li class="menu-nav__item active">
+            <img class="menu-nav__icon" src="assets/icons/events.svg" alt="Calendar Icon" />
+            <a href="#" class="menu-nav__link">Exhibitions & Events</a>
+          </li>
+          <li class="menu-nav__item">
+            <img
+              class="menu-nav__icon"
+              src="assets/icons/artists.svg"
+              alt="Artists and Artworks Icon"
+            />
+            <a href="#" class="menu-nav__link">Artists & Artworks</a>
+          </li>
+          <li class="menu-nav__item">
+            <img class="menu-nav__icon" src="assets/icons/collections.svg" alt="Calendar Icon" />
+            <a href="collections.html" class="menu-nav__link">Collections</a>
+          </li>
+          <li class="menu-nav__item">
+            <img class="menu-nav__icon" src="assets/icons/ticket.svg" alt="Calendar Icon" />
+            <a href="tickets.html" class="menu-nav__link">Plan Your Visit</a>
+          </li>
+          <li class="menu-nav__item">
+            <img class="menu-nav__icon" src="assets/icons/membership.svg" alt="Calendar Icon" />
+            <a href="#" class="menu-nav__link">Become a Member</a>
+          </li>
+          <li class="menu-nav__item">
+            <img class="menu-nav__icon" src="assets/icons/shop.svg" alt="Calendar Icon" />
+            <a href="#" class="menu-nav__link"> Shop </a>
+          </li>
+        </ul>
+      </nav>
+
+      <h1 class="header__title">Plan Your Visit</h1>
+    </header>
+
+    <section class="main">
+      <section class="tickets">
+        <div class="tickets__header">
+          <h1>Skip the Line.</h1>
+          <h1>Purchase Tickets.</h1>
+          <p>All exhibitions, audio tours, and films included in the price of admission.</p>
+        </div>
+
+        <div class="days">
+          <div class="tickets__days">
+            <p class="tickets__day" data-day="today">Today</p>
+            <p class="tickets__day active-day" data-day="tomorrow">Tomorrow</p>
+            <p class="tickets__day" data-day="other">Other</p>
+          </div>
+
+          <div class="tickets__dates">
+            <p class="tickets__date tickets__date-today">
+              March 22, 2016 <br />
+              Open 10:30am-5:30pm
+            </p>
+
+            <p class="tickets__date tickets__date-tomorrow visible">
+              March 22, 2016 <br />
+              Open 10:30am-5:30pm
+            </p>
+
+            <p class="tickets__date tickets__date-other"></p>
+          </div>
+        </div>
+
+        <div class="purchase">
+          <div class="purchase__item">
+            <p>Adults</p>
+            <div class="purchase__amount">
+              <img class="minus-adult" src="assets/icons/minus.svg" alt="" />
+              <p class="purchase__amount-adult">0</p>
+              <img class="plus-adult" src="assets/icons/plus.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="purchase__item senior">
+            <div>
+              <p>Seniors</p>
+              <p class="purchase__item-discounted">65+ with ID</p>
+            </div>
+            <div class="purchase__amount">
+              <img class="minus-senior" src="assets/icons/minus.svg" alt="" />
+              <p class="purchase__amount-senior">0</p>
+              <img class="plus-senior" src="assets/icons/plus.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="purchase__item student">
+            <div>
+              <p>Students</p>
+              <p class="purchase__item-discounted student">with ID</p>
+            </div>
+            <div class="purchase__amount">
+              <img class="minus-student" src="assets/icons/minus.svg" alt="" />
+              <p class="purchase__amount-student">0</p>
+              <img class="plus-student" src="assets/icons/plus.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="tickets__summary">
+          <p>Total</p>
+          <p class="total-price">$0</p>
+        </div>
+
+        <div class="payment">
+          <a class="payment__button" href="#">Continue to Payment</a>
+        </div>
+      </section>
+    </section>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+@include media-lg {
+  body {
+    position: relative;
+    width: 120rem;
+    margin: auto;
+    font-size: 1.8rem;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .main {
+    transform: none;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+
+    &__logo-box {
+      img {
+        margin-top: 3rem;
+        width: 10rem;
+      }
+    }
+
+    &__title {
+      align-self: center;
+      font-size: 4rem;
+    }
+  }
+
+  .nav {
+    align-self: flex-end;
+    visibility: visible;
+    filter: none;
+    position: relative;
+    max-width: 120rem;
+    width: 90%;
+
+    .menu-nav {
+      // margin-top: 4rem;
+      flex-direction: row;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      transform: none;
+      background: transparent;
+      padding: 0;
+
+      &__item {
+        width: auto;
+        padding-left: 3rem;
+      }
+      &__link {
+        font-size: 1.4rem;
+        font-weight: 600;
+        @include link-color($color-primary, $color-black);
+      }
+
+      &__icon {
+        display: none;
+      }
+
+      &__search {
+        @include search-bar($color-white, $color-primary);
+        width: auto;
+        height: 2rem;
+      }
+    }
+  }
+
+  .tickets {
+    &__dates {
+      font-size: 1.4rem;
+    }
+  }
+}

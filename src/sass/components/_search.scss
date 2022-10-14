@@ -1,0 +1,15 @@
+.search {
+  margin: 2.5rem auto;
+  display: flex;
+  flex-direction: column;
+
+  &__searchbar {
+    @include search-bar($color-white, $color-primary);
+    background: url("../../assets/icons/search-primary.svg") center no-repeat;
+    background-position-x: 98%;
+  }
+
+  &__advanced {
+    @include link-color($color-primary, $color-black);
+  }
+}
