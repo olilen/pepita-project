@@ -20,4 +20,7 @@ The "scripts" folder contains the JavaScript file.
 
 In the "public" folder we can find the COMPILED and MINIMIZED CSS and JS files. I included this folder so I can publish it on Github Pages.
 
+
+Github Page demo is available on : https://olilen.github.io/pepita-project/public/
+
 Thank you for the opportunity!
